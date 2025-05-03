@@ -1,0 +1,12 @@
+Pacotes = Agrupamento de de arquivos que contêm código 
+    relacionado, como funções, estruturas e variáveis.
+    Conjunto de arquivos em uma mesma pasta
+
+
+Modulo = Conjunto de pacotes que compoêm o projeto que 
+    serão compilados em conjunto.
+    Centraliza todas as dependências do projeto.
+    > go mod init nome-do-modulo | Inicia o modulo
+    > go build | Compila os aquivos do modulo
+    > go get link-pacote-externo | Instala pacotes externos (dependências externas)
+    > go mod tidy | Remove as dependências que não estão sendo utilizadas
