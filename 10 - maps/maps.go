@@ -7,6 +7,8 @@ func main() {
 
 	// ***
 	// Maps
+	// Maps são estruturas de dados que armazenam pares de chave-valor.
+	// Eles são semelhantes a dicionários em outras linguagens de programação.
 	// ***
 	usuario := map[string]string{
 		"nome":      "Lucas",
