@@ -46,4 +46,31 @@ func main() {
 	fmt.Println("------------------------------------")
 	array2[2] = 33
 	fmt.Println(slice2)
+	fmt.Println("------------------------------------")
+
+	// ***
+	// Arrays internos
+	// ***
+	slice3 := make([]float32, 10, 11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // Tamanho do slice
+	fmt.Println(cap(slice3)) // Capacidade do slice
+	fmt.Println("------------------------------------")
+
+	slice3 = append(slice3, 1.1)
+	slice3 = append(slice3, 2.2)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // Tamanho do slice
+	fmt.Println(cap(slice3)) // Capacidade do slice
+	fmt.Println("------------------------------------")
+
+	slice4 := make([]float32, 5) // Tamanho 5, capacidade 5
+	fmt.Println(slice4)
+	fmt.Println(len(slice4)) // Tamanho do slice
+	fmt.Println(cap(slice4)) // Capacidade do slice
+	slice4 = append(slice4, 1.1)
+	fmt.Println(slice4)
+	fmt.Println(len(slice4)) // Tamanho do slice
+	fmt.Println(cap(slice4)) // Capacidade do slice
+	fmt.Println("------------------------------------")
 }
